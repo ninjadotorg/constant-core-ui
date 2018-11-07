@@ -1,0 +1,68 @@
+.c-btn {
+  cursor: pointer;
+    height: 44px;
+    line-height: 44px;
+    border-radius: 44px;
+    padding: 0 45px;
+    font-size: 16px;
+    letter-spacing: 0.25px;
+    white-space: nowrap;
+    border-color: transparent;
+    text-transform: uppercase;
+    color: get-color('c-white');
+  &.c-btn-primary {
+    background-color: get-color('primary');
+    &:hover {
+      background-color: lighten($color: get-color('primary'), $amount: 5%);
+    }
+    &:active {
+      background-color: darken($color: get-color('primary'), $amount: 5%);
+    }
+  }
+  &.c-btn-red {
+    background-color: get-color('c-red');
+    &:hover {
+      background-color: lighten($color: get-color('c-red'), $amount: 5%);
+    }
+    &:active {
+      background-color: darken($color: get-color('c-red'), $amount: 5%);
+    }
+  }
+  &.c-btn-lg {
+    font-size: 18px;
+    height: 56px;
+    line-height: 56px;
+  }
+  &.c-btn-sm {
+    font-size: 14px;
+    height: 36px;
+    line-height: 36px;
+  }
+  &.c-btn-secondary {
+    background-color: transparent !important;
+    &.c-btn-primary {
+      color: get-color('primary');
+      border-color: get-color('primary');
+      &:hover {
+        color: lighten($color: get-color('primary'), $amount: 5%);
+        border-color: lighten($color: get-color('primary'), $amount: 5%);
+      }
+      &:active {
+        color: darken($color: get-color('primary'), $amount: 7%);
+        border-color: darken($color: get-color('primary'), $amount: 7%);
+      }
+    }
+    &.c-btn-red {
+      color: get-color('c-red');
+      border-color: get-color('c-red');
+      &:hover {
+        color: lighten($color: get-color('c-red'), $amount: 5%);
+        border-color: lighten($color: get-color('c-red'), $amount: 5%);
+      }
+      &:active {
+        color: darken($color: get-color('c-red'), $amount: 7%);
+        border-color: darken($color: get-color('c-red'), $amount: 7%);
+      }
+    }
+  }
+}

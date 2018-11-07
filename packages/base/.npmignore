@@ -1,0 +1,10 @@
+__tests__
+.next
+node_modules
+pages
+styles
+.gitignore
+.npmignore
+.travis.yml
+gulpfile.js
+yarn.lock

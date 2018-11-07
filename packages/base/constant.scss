@@ -1,0 +1,260 @@
+$points: (
+  xs: 576px,
+  sm: 768px,
+  md: 992px,
+  lg: 1200px
+);
+
+$colors: (
+  primary: #2989FF,
+  c-white: #FFFFFF,
+  c-red: #FE4A49,
+  c-orange: #FF954A,
+  c-turquose: #2EC4B5,
+  c-dandelion: #FED766
+);
+
+$grays: (
+  black-haze: #F6F7F8,
+  black-squeeze: #F5F9FC,
+  catskill-white: #EDF3FA,
+  periwinkle: #CAD5E3,
+  spindle: #B4C4D9,
+  nepal: #91A8C7,
+  bali-hai: #8099BA,
+  endeavour: #2A628F
+);
+
+.montserrat {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 500 !important;
+}
+
+.open-sans {
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: 400 !important;
+}
+
+.c-btn {
+  @extend .montserrat;
+}
+
+.c-input {
+  @extend .open-sans;
+}
+
+.h0, h1, h2, h3, h4, h5, h6 {
+  @extend .montserrat;
+  font-weight: bold !important;
+}
+
+p, .c-title, .c-title-sm, .c-caption {
+  @extend .open-sans;
+}
+
+body {
+  @extend .open-sans;
+  font-size: 16px;
+}
+
+.c-text-normal {
+  text-transform: none;
+}
+
+.c-title {
+  font-size: 24px;
+}
+
+.c-title-sm {
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+// h4 {
+
+//   font-size: 60px;
+
+// }
+
+// h5 {
+
+//   font-size: 60px;
+
+// }
+
+// h6 {
+
+//   font-size: 60px;
+
+// }
+
+@function get-breakpoint($name) {
+  $point: map-get($points, $name);
+  @return $point;
+}
+
+@function get-color($name) {
+  $color: map-get($colors, $name);
+  @return $color;
+}
+
+@function get-gray($name) {
+  $gray: map-get($grays, $name);
+  @return $gray;
+}
+
+@mixin breakpoint($point) {
+  @media (min-width: get-breakpoint($point)) {
+    @content;
+  }
+}
+
+@mixin breakpoint-max($point) {
+  @media (max-width: get-breakpoint($point)) {
+    @content;
+  }
+}
+
+@mixin breakpoint-between($from, $to) {
+  @media (min-width: get-breakpoint($from)) and (max-width: get-breakpoint($to)) {
+    @content;
+  }
+}
+
+.c-btn {
+  cursor: pointer;
+    height: 44px;
+    line-height: 44px;
+    border-radius: 44px;
+    padding: 0 45px;
+    font-size: 16px;
+    letter-spacing: 0.25px;
+    white-space: nowrap;
+    border-color: transparent;
+    text-transform: uppercase;
+    color: get-color('c-white');
+  &.c-btn-primary {
+    background-color: get-color('primary');
+    &:hover {
+      background-color: lighten($color: get-color('primary'), $amount: 5%);
+    }
+    &:active {
+      background-color: darken($color: get-color('primary'), $amount: 5%);
+    }
+  }
+  &.c-btn-red {
+    background-color: get-color('c-red');
+    &:hover {
+      background-color: lighten($color: get-color('c-red'), $amount: 5%);
+    }
+    &:active {
+      background-color: darken($color: get-color('c-red'), $amount: 5%);
+    }
+  }
+  &.c-btn-lg {
+    font-size: 18px;
+    height: 56px;
+    line-height: 56px;
+  }
+  &.c-btn-sm {
+    font-size: 14px;
+    height: 36px;
+    line-height: 36px;
+  }
+  &.c-btn-secondary {
+    background-color: transparent !important;
+    &.c-btn-primary {
+      color: get-color('primary');
+      border-color: get-color('primary');
+      &:hover {
+        color: lighten($color: get-color('primary'), $amount: 5%);
+        border-color: lighten($color: get-color('primary'), $amount: 5%);
+      }
+      &:active {
+        color: darken($color: get-color('primary'), $amount: 7%);
+        border-color: darken($color: get-color('primary'), $amount: 7%);
+      }
+    }
+    &.c-btn-red {
+      color: get-color('c-red');
+      border-color: get-color('c-red');
+      &:hover {
+        color: lighten($color: get-color('c-red'), $amount: 5%);
+        border-color: lighten($color: get-color('c-red'), $amount: 5%);
+      }
+      &:active {
+        color: darken($color: get-color('c-red'), $amount: 7%);
+        border-color: darken($color: get-color('c-red'), $amount: 7%);
+      }
+    }
+  }
+}
+
+.c-input {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  border: 1px solid get-gray('periwinkle');
+  border-radius: 4px;
+  color: get-gray('bali-hai');
+  outline-color: get-gray('bali-hai');
+  .c-input-block {
+    display: block;
+  }
+  &:hover {
+    border-color: get-gray('bali-hai');
+  }
+  &:active {
+    border-color: get-color('bali-hai');
+  }
+  &.c-input-error {
+    border-color: get-color('c-red');
+    color: get-color('c-red');
+    outline-color: get-color('c-red');
+  }
+}
+
+.c-breadcrumb {
+  padding: 10px 0;
+  ul {
+    height: 20px;
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline-block;
+      padding: 0 15px;
+      position: relative;
+      &:not(:last-of-type)::after {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        content: '/'
+      }
+      &:first-of-type {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+body {
+  @extend .open-sans;
+}
+
+.c-shadow-bottom {
+  box-shadow: 0 6px 16px -8px rgba(0, 0, 0, 0.25);
+}

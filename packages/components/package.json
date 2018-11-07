@@ -1,0 +1,34 @@
+{
+  "name": "@contant-core-ui/components",
+  "version": "0.0.1",
+  "description": "Components of Constant project",
+  "keywords": [
+    "component",
+    "react",
+    "reactjs",
+    "jsx"
+  ],
+  "author": "0xbatutut <39509105+0xbatutut@users.noreply.github.com>",
+  "homepage": "https://github.com/ninjadotorg/contant-ui/tree/master/packages/components",
+  "license": "MIT",
+  "main": "lib/components.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github-ninjadotorg:ninjadotorg/constant-ui.git"
+  },
+  "scripts": {
+    "install": "yarn",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0"
+  }
+}

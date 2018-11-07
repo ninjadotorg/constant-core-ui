@@ -1,0 +1,13 @@
+@function get-breakpoint($name) {
+  $point: map-get($points, $name);
+  @return $point;
+}
+
+@function get-color($name) {
+  $color: map-get($colors, $name);
+  @return $color;
+}
+@function get-gray($name) {
+  $gray: map-get($grays, $name);
+  @return $gray;
+}

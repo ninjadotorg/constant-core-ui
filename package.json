@@ -1,0 +1,9 @@
+{
+  "name": "constant-core-ui",
+  "private": true,
+  "scripts": {},
+  "devDependencies": {
+    "lerna": "^3.4.3",
+    "postcss-scss": "^2.0.0"
+  }
+}
