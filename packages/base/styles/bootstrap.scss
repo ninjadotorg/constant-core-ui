@@ -1,4 +1,10 @@
 @import "~bootstrap-nojs/bootstrap.css";
+@import "./main.scss";
+
+
+body {
+  background-color: get-gray('black-squeeze') !important;
+}
 
 .preview-container {
   margin-top: 25px;

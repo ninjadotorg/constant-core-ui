@@ -7,6 +7,14 @@
   font-weight: 400 !important;
 }
 
+.pt-mono {
+  font-family: 'PT Mono', monospace !important;
+}
+
+.c-hash {
+  @extend .pt-mono;
+}
+
 .c-btn {
   @extend .montserrat;
 }
@@ -15,12 +23,12 @@
   @extend .open-sans;
 }
 
-.h0, h1, h2, h3, h4, h5, h6 {
+.h0, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   @extend .montserrat;
   font-weight: bold !important;
 }
 
-p, .c-title, .c-title-sm, .c-caption {
+p, .p, .c-title, .c-title-sm, .c-caption {
   @extend .open-sans;
 }
 

@@ -20,7 +20,9 @@
   },
   "scripts": {
     "dev": "next",
-    "build": "gulp",
+    "build": "next build",
+    "export": "next export",
+    "prepublish": "gulp",
     "test": "jest"
   },
   "devDependencies": {
@@ -36,6 +38,7 @@
     "next": "^7.0.2",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "postcss-easy-import": "^3.0.0",
+    "postcss-scss": "^2.0.0",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "resolve-url-loader": "^3.0.0"
