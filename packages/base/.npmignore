@@ -3,8 +3,12 @@ __tests__
 node_modules
 pages
 styles
+images
+now.json
+next.config.js
 .gitignore
 .npmignore
 .travis.yml
 gulpfile.js
 yarn.lock
+static
