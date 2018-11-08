@@ -33,3 +33,9 @@ h5, .h5 {
 h6, .h6 {
   font-size: 20px;
 }
+
+.c-text-error {
+  display: block;
+  padding-top: 5px;
+  @extend .c-color-red;
+}

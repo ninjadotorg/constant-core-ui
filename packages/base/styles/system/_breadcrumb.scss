@@ -1,5 +1,5 @@
 .c-breadcrumb {
-  white-space: nowrap;
+  @extend .c-text-cut;
   padding: 10px 0;
   ul {
     height: 20px;

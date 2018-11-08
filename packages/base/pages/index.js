@@ -1,13 +1,36 @@
 import React from 'react';
 import Head from 'next/head';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/pro-regular-svg-icons';
+
 import '../styles/bootstrap.scss';
 
 class Base extends React.PureComponent {
   render() {
+    const title = "Design system - constant.money";
+    const description = "Design system of constant.money";
     return (
       <div>
         <Head>
+          <title>{title}</title>
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+          <meta name="description" content={description} />
+          <link rel="apple-touch-icon" sizes="180x180" href="/static/icons/apple-touch-icon.png" />
+          <link rel="icon" type="image/png" sizes="32x32" href="/static/icons/favicon-32x32.png" />
+          <link rel="icon" type="image/png" sizes="16x16" href="/static/icons/favicon-16x16.png" />
+          <link rel="manifest" href="/static/icons/site.webmanifest" />
+          <link rel="mask-icon" href="/static/icons/safari-pinned-tab.svg" color="#0a2240" />
+          <meta name="msapplication-TileColor" content="#0a2240" />
+          <meta name="theme-color" content="#0a2240" />
+          <meta property="og:url" content="https://constant.money" />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content={title} />
+          <meta property="og:description" content={description} />
+          <meta property="og:image" content="https://constant.money/static/images/preview.png" />
+          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:site" content="@ninjadotorg" />
+          <meta name="twitter:creator" content="@ninjadotorg" />
           {/* https://fonts.google.com/specimen/PT+Mono?selection.family=PT+Mono */}
           <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet" />
           {/* https://fonts.google.com/specimen/Montserrat?selection.family=Montserrat:400,500,700,900 */}
@@ -48,6 +71,16 @@ class Base extends React.PureComponent {
                     <div>
                       <code>
                         .c-btn .c-btn-primary .c-btn-sm
+                      </code>
+                    </div>
+                  </div>
+                  <div className="preview-element">
+                    <button className="c-btn c-btn-primary c-block">
+                      Place order
+                    </button>
+                    <div>
+                      <code>
+                        .c-btn .c-btn-primary .c-block
                       </code>
                     </div>
                   </div>
@@ -108,6 +141,57 @@ class Base extends React.PureComponent {
                     <div>
                       <code>
                         .c-input .c-input-error
+                      </code>
+                    </div>
+                  </div>
+                  <div className="preview-element">
+                    <input className="c-input c-input-success" defaultValue="success" />
+                    <div>
+                      <code>
+                        .c-input .c-input-success
+                      </code>
+                    </div>
+                  </div>
+                  <div className="preview-element">
+                    <input className="c-input c-input-disabled" defaultValue="disabled" disabled />
+                    <div>
+                      <code>
+                        .c-input .c-input-disabled
+                      </code>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div className="preview-container">
+            <div className="container">
+              <div className="row">
+                <div className="col-12 col-sm-6">
+                  <h2>Form format</h2>
+                  <div className="preview-element">
+                    <div className="c-input-group">
+                      <label>
+                        Username
+                        <input className="c-input" defaultValue="default" />
+                      </label>
+                    </div>
+                    <div>
+                      <code>
+                        <pre>
+                          {
+                            `
+<div className="c-input-group">
+  <label>
+    Username
+    <input className="c-input" defaultValue="default" />
+  </label>
+</div>
+                            `
+                          }
+                        </pre>
                       </code>
                     </div>
                   </div>
@@ -292,6 +376,26 @@ $grays: (
                       </code>
                     </div>
                   </div>
+                  <div className="preview-element">
+                    <div className="c-hash">
+                      pt mono
+                    </div>
+                    <div>
+                      <code>
+                        .pt-mono or .c-hash
+                      </code>
+                    </div>
+                  </div>
+                  <div className="preview-element">
+                    <div className="montserrat">
+                      montserrat
+                    </div>
+                    <div>
+                      <code>
+                        .montserrat
+                      </code>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -301,7 +405,7 @@ $grays: (
           <div className="preview-container">
             <div className="container">
               <div className="row">
-                <div className="col-12 col-sm-6">
+                <div className="col-12">
                   <h2>Table</h2>
                   <div className="preview-element">
                     <table className="c-table c-table-list">
@@ -337,7 +441,7 @@ $grays: (
           <div className="preview-container">
             <div className="container">
               <div className="row">
-                <div className="col-12 col-sm-6">
+                <div className="col-12">
                   <h2>Breadcrumb</h2>
                   <div className="preview-element">
                     <div className="c-breadcrumb">
@@ -359,6 +463,51 @@ $grays: (
     <li><a href="#">Explorer</a></li>
     <li><a href="#">Block: abc</a></li>
     <li><span>Txs</span></li>
+  </ul>
+</div>
+                          `
+                          }
+                        </pre>
+                      </code>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div className="preview-container">
+            <div className="container">
+              <div className="row">
+                <div className="col-12">
+                  <h2>Pagination</h2>
+                  <div className="preview-element">
+                    <div className="c-pagination">
+                      <ul>
+                        <li className="prev"><a href="#"><FontAwesomeIcon icon={faChevronLeft} /></a></li>
+                        <li className="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">8</a></li>
+                        <li><a href="#">9</a></li>
+                        <li className="next"><a href="#"><FontAwesomeIcon icon={faChevronRight} /></a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <code>
+                        <pre>
+                          {
+                            `
+<div className="c-pagination">
+  <ul>
+    <li className="prev"><a href="#"><FontAwesomeIcon icon={faChevronLeft} /></a></li>
+    <li className="active"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">...</a></li>
+    <li><a href="#">8</a></li>
+    <li><a href="#">9</a></li>
+    <li className="next"><a href="#"><FontAwesomeIcon icon={faChevronRight} /></a></li>
   </ul>
 </div>
                           `

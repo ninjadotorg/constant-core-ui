@@ -6,7 +6,17 @@
 
 ### Imports
 
-import fonts at your head
+Install dependencies
+
+> https://github.com/FortAwesome/react-fontawesome#installation
+
+```bash
+yarn add @fortawesome/fontawesome-svg-core
+yarn add @fortawesome/react-fontawesome
+yarn add @fortawesome/pro-regular-svg-icons
+```
+
+Import fonts at your head
 
 ```html
 <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet" />
@@ -14,7 +24,7 @@ import fonts at your head
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet" />
 ```
 
-import at SCSS root file
+Import at SCSS root file
 
 ```scss
 @import "~bootstrap-nojs/bootstrap.scss";
