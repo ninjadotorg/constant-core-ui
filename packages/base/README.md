@@ -1,4 +1,4 @@
-# `@cconstant-core-ui/base`
+# `@constant-core-ui/base`
 
 > This is style base of constant.money
 
@@ -27,8 +27,8 @@ Import fonts at your head
 Import at SCSS root file
 
 ```scss
-@import "~bootstrap-nojs/bootstrap.scss";
-@import "~constant-core-ui/base/constant.scss";
+@import "~bootstrap-nojs/bootstrap.css";
+@import "~@constant-core-ui/base/constant.scss";
 ```
 
 ### Documents
