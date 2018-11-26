@@ -1,10 +1,7 @@
-.montserrat {
-  font-family: 'Montserrat', sans-serif !important;
-  font-weight: 500 !important;
-}
-.open-sans {
-  font-family: 'Open Sans', sans-serif !important;
-  font-weight: 400 !important;
+@import url("https://use.typekit.net/gez7skx.css");
+
+.acumin-pro {
+  font-family: acumin-pro, sans-serif;
 }
 
 .pt-mono {
@@ -15,24 +12,16 @@
   @extend .pt-mono;
 }
 
-.c-btn {
-  @extend .montserrat;
-}
-
-.c-input {
-  @extend .open-sans;
-}
-
 .h0, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  @extend .montserrat;
   font-weight: bold !important;
 }
 
-p, .p, .c-title, .c-title-sm, .c-caption {
-  @extend .open-sans;
+body {
+  @extend .acumin-pro;
+  font-size: 16px;
 }
 
-body {
-  @extend .open-sans;
+button {
+  @extend .acumin-pro;
   font-size: 16px;
 }

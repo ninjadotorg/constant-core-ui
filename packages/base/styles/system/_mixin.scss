@@ -15,3 +15,7 @@
     @content;
   }
 }
+
+@mixin shadow($color, $shadow) {
+  box-shadow: get-shadow($shadow) $color;
+}

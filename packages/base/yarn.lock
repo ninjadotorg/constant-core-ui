@@ -712,6 +712,20 @@
   dependencies:
     "@fortawesome/fontawesome-common-types" "^0.2.8"
 
+"@fortawesome/free-brands-svg-icons@^5.5.0":
+  version "5.5.0"
+  resolved "https://npm.fontawesome.com/@fortawesome/free-brands-svg-icons/-/free-brands-svg-icons-5.5.0.tgz#50e020aced5b9652db1d2d9d7909c73561ff1f4a"
+  integrity sha512-R2I2eARMVofGTtfxe5+VaMRXiQYQQFoDkHj2Q1qZVn37eRFszDySvSlJuKTsqFRsOxoP4Iq+xIGFy/ppoSo3Wg==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.2.8"
+
+"@fortawesome/pro-light-svg-icons@^5.5.0":
+  version "5.5.0"
+  resolved "https://npm.fontawesome.com/@fortawesome/pro-light-svg-icons/-/pro-light-svg-icons-5.5.0.tgz#bbfafc6c315592bd93bd77d96b22ba5cc054f745"
+  integrity sha512-Ywqf0tZ0nxbshnc2L3FkjP99uO7CYWUn+RaAxSJS2gAivzl64Kd84/JIPFsiUJID4Edn6lYd56pwcq72/kAUcQ==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.2.8"
+
 "@fortawesome/pro-regular-svg-icons@^5.5.0":
   version "5.5.0"
   resolved "https://npm.fontawesome.com/@fortawesome/pro-regular-svg-icons/-/pro-regular-svg-icons-5.5.0.tgz#2533fb1ea44b6fefbe9eaf5c19104ec48ea60675"
@@ -726,6 +740,11 @@
   dependencies:
     humps "^2.0.1"
     prop-types "^15.5.10"
+
+"@sindresorhus/class-names@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@sindresorhus/class-names/-/class-names-1.0.0.tgz#c21cddc5f5d7d676210eddcba7a6940dbb3b0c21"
+  integrity sha512-no3wbYl/zqrgkMrUHGpy+0OiYbjOJruySiPH5c0hg7/XuCH50PzJ1aSyMNqooXRuJFK3DLecWmgW8q3MnHOGYw==
 
 "@webassemblyjs/ast@1.7.8":
   version "1.7.8"
