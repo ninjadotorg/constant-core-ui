@@ -1,0 +1,35 @@
+.c-header {
+  height: 60px;
+  line-height: 60px;
+  @extend .c-shadow-200;
+  @extend .c-bg-blue-900;
+  position: relative;
+  z-index: 100;
+  font-size: 16px;
+  color: #fff;
+  a {
+    color: #fff;
+  }
+  .logo-container {
+    float: left;
+  }
+  .logo-text-container {
+    float: left;
+  }
+  .menu-container {
+    float: left;
+    .menu-item {
+      padding: 0 15px;
+      display: inline-block;
+      svg {
+        margin-left: 10px;
+      }
+      ul {
+        display: none;
+      }
+    }
+  }
+  .auth-container {
+    float: right;
+  }
+}

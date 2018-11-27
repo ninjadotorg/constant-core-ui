@@ -24,8 +24,49 @@ class Input extends React.Component {
             </div>
             <div className="col-12">
               <h3>Basic</h3>
+              <Preview type="block" code={[
+                {
+                  name: 'Code',
+                  type: 'code',
+                  code: `<input type="text" className="c-input" />`,
+                }
+              ]}>
+                <input type="text" className="c-input" />
+              </Preview>
             </div>
-
+            <div className="col-12">
+              <h3>Advance</h3>
+              <Preview type="block" code={[
+                {
+                  name: 'Code',
+                  type: 'code',
+                  code: `<label>
+  First name
+  <input type="text" className="c-input" />
+</label>`,
+                }
+              ]}>
+                <label>
+                  First name
+                  <input type="text" className="c-input" />
+                </label>
+              </Preview>
+              <Preview type="block" code={[
+                {
+                  name: 'Code',
+                  type: 'code',
+                  code: `<label>
+  First name
+  <input type="text" className="c-input c-block" />
+</label>`,
+                }
+              ]}>
+                <label>
+                  First name
+                  <input type="text" className="c-input c-block" />
+                </label>
+              </Preview>
+            </div>
           </div>
         </Layout>
       </>

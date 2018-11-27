@@ -271,6 +271,6 @@
   }
 
   @include breakpoint('sm') {
-    outline: none;
+    outline: none !important;
   }
 }
