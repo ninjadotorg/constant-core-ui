@@ -1,6 +1,6 @@
 {
-  "name": "@constant-core-ui/base",
-  "version": "0.0.2",
+  "name": "@constant-ui/base",
+  "version": "0.0.1",
   "description": "Style base of constant.money",
   "keywords": [
     "styles",
@@ -19,7 +19,7 @@
     "url": "https://github.com/ninjadotorg/contant-ui/tree/master/packages/base"
   },
   "scripts": {
-    "dev": "next -H 0.0.0.0",
+    "dev": "next -H 0.0.0.0 -p 3100",
     "build": "gulp",
     "prepublish": "gulp",
     "test": "jest"

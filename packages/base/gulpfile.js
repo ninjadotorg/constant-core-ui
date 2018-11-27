@@ -4,11 +4,9 @@ const postcss = require('gulp-postcss');
 const postcssScss = require('postcss-scss');
 const autoprefixer = require('autoprefixer');
 const easyImport = require('postcss-easy-import');
-const cssnano = require('cssnano');
 
 const plugins = [
   autoprefixer({ browsers: ['last 1 version'] }),
-  cssnano(),
   easyImport({ prefix: '_', extensions: ['.scss'] })
 ];
 
