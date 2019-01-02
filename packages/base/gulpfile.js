@@ -7,7 +7,7 @@ const easyImport = require('postcss-easy-import');
 
 const plugins = [
   autoprefixer({ browsers: ['last 1 version'] }),
-  easyImport({ prefix: '_', extensions: ['.scss'] })
+  easyImport({ prefix: '_', extensions: ['.scss', '.css'] })
 ];
 
 gulp.task('sass', function () {
