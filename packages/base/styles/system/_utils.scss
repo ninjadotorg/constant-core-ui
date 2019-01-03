@@ -3,3 +3,9 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.c-error {
+  @extend .c-color-red-500;
+  font-size: 90%;
+  padding: 2px 0 3px;
+}

@@ -3,6 +3,8 @@
 }
 
 .c-btn {
+  display: inline-block;
+
   position: relative;
   cursor: pointer;
 
@@ -56,6 +58,8 @@
   }
 
   &:hover {
+    color: get-color('c-white');
+    text-decoration: none;
     &:before {
       opacity: 0.3;
     }
